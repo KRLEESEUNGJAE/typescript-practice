@@ -12,7 +12,6 @@
   const dayOfToday = DAYS_ENUM.MONDAY;
 
   // TypeScript
-  type DaysOfWeek = 'Monday' | 'Tuesday' | 'Wednesday';
   enum Days {
     Monday,
     Tuesday,
@@ -28,6 +27,9 @@
   day = 10;
   console.log(day);
 
-  let dayOfweek: DaysOfWeek = 'Monday';
-  dayOfweek = 'Wednesday';
+  //? enum보다 type을 이용하는 것이 더 안전함
+  type DaysOfWeek = "Monday" | "Tuesday" | "Wednesday";
+  let dayOfweek: DaysOfWeek = "Monday";
+  dayOfweek = "Wednesday";
+  console.log(dayOfweek);
 }

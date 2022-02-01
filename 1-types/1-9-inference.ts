@@ -1,11 +1,11 @@
 /**
  * Type Inference
  */
-let text = 'hello';
-function print(message = 'hello') {
+let text = "hello";
+function print(message = "hello") {
   console.log(message);
 }
-print('hello');
+print("hello");
 
 function add(x: number, y: number): number {
   return x + y;

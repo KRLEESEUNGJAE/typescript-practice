@@ -17,7 +17,7 @@
   }
 
   internWork({
-    name: 'ellie',
+    name: "ellie",
     score: 1,
     empolyeeId: 123,
     work: () => {},

@@ -1,8 +1,8 @@
 {
   // JavaScript 💩
-  function jsAdd(num1, num2) {
-    return num1 + num2;
-  }
+  // function jsAdd(num1, num2) {
+  //   return num1 + num2;
+  // }
 
   // TypeScript ✨
   function add(num1: number, num2: number): number {
@@ -10,14 +10,14 @@
   }
 
   // JavaScript 💩
-  function jsFetchNum(id) {
-    // code ...
-    // code ...
-    // code ...
-    return new Promise((resolve, reject) => {
-      resolve(100);
-    });
-  }
+  // function jsFetchNum(id) {
+  //   // code ...
+  //   // code ...
+  //   // code ...
+  //   return new Promise((resolve, reject) => {
+  //     resolve(100);
+  //   });
+  // }
 
   // TypeScript ✨
   function fetchNum(id: string): Promise<number> {
@@ -32,15 +32,16 @@
   // JavaScript ✨ => TypeScript
   // Optional parameter
   function printName(firstName: string, lastName?: string) {
+    //* 인자에 '?'(물음표)를 작성하면 전달 받을 수도 있고 전달 받지 않을 수도 있다는 뜻(optional의 의미)
     console.log(firstName);
     console.log(lastName); // undefined
   }
-  printName('Steve', 'Jobs');
-  printName('Ellie');
-  printName('Anna');
+  printName("Steve", "Jobs");
+  printName("Ellie");
+  printName("Anna");
 
   // Default parameter
-  function printMessage(message: string = 'default message') {
+  function printMessage(message: string = "default message") {
     console.log(message);
   }
   printMessage();
