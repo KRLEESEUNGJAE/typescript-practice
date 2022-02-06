@@ -1,6 +1,6 @@
 const obj = { a: 'apple', b: 'banana' };
-console.log(obj);
-console.log({ ...obj, c: 'chicken' });
+// console.log(obj);
+// console.log({ ...obj, c: 'chicken' });
 
 function a() {
   console.log('apple');
@@ -10,17 +10,40 @@ function b() {
   console.log('banana');
 }
 
-function ab() {
+const returnNum = 7;
+
+function ab(num) {
+  console.log(`Pulling ${num} nums... ☕️`);
+  return {
+    num: num,
+    hasMilk: false,
+  };
+}
+console.log(ab(11));
+
+function combination(num) {
   a();
   b();
+  return ab(num);
 }
 
 function final(num) {
-  const tester = ab();
+  const tester = combination(num);
   return {
-    // ...tester,
+    ...tester,
+    Addnumber: num,
     hasMilk: true,
   };
 }
 
-final(7);
+const result = final(7);
+console.log(result);
+
+// function a(num) {
+//   let number = 0;
+//   console.log('apple');
+//   return number;
+// }
+
+// let result = a(7);
+// console.log(result);
