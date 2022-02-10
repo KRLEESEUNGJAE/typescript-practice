@@ -27,7 +27,7 @@ class StackImpl implements Stack {
     this._size++;
   }
   pop(): string {
-    //? null == undefined, null !== undefined
+    //! null == undefined, null !== undefined
     if (this.head == null) {
       // null과 undefined 둘 다 거를 수 있다
       throw new Error('Stack is empty!');
