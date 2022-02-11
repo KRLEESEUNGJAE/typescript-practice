@@ -1,7 +1,10 @@
 // either: a or b
 interface Either<L, R> {
+  //? what's different?
   left: () => L;
   right: () => R;
+  // left(): L;
+  // right(): R;
 }
 
 class SimpleEither<L, R> implements Either<L, R> {
