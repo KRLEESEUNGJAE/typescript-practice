@@ -35,3 +35,25 @@ bob.workPartTime();
 const karmaAfterPay = pay(karma);
 const bobAfterPay = pay(bob);
 karmaAfterPay.workFullTime();
+
+const obj = {
+  name: 'karma',
+  age: 20,
+};
+
+const obj2 = {
+  animal: '🐈',
+};
+
+//* 함수 선언식
+function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+//* 함수 표현식
+const getValue2 = <T, K extends keyof T>(obj: T, key: K): T[K] => {
+  return obj[key];
+};
+
+console.log(getValue(obj, 'name')); // karma
+console.log(getValue(obj, 'age')); // 20
+console.log(getValue(obj2, 'animal')); // 🐈
