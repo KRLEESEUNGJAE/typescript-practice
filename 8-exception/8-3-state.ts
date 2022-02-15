@@ -1,6 +1,6 @@
 {
-  /*   TypeScript에서 구현된 catch()에는 어떠한 타입정보도 전달되지 않아서 instanceOf를 사용할 수 없다.
-  그러므로 exception은 정말 예상하지 못한 에러처리를 위해서 사용하는 것이 좋고
+  /* TypeScript에서 구현된 catch()에는 어떠한 타입정보도 전달되지 않아서 instanceOf를 사용할 수 없다.
+  그러므로 exception(try ~ catch)은 정말 예상하지 못한 에러처리를 위해서 사용하는 것이 좋고
   세부적인 에러처리는 Error State를 사용해서 처리해주는 것이 좋다. */
 
   // 아래는 Error State 예시
