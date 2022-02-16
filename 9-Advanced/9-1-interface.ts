@@ -1,3 +1,6 @@
+// Type: 데이터의 타입을 결정 -> 데이터를 담을 목적
+// Interface: 어떤 것의 규격사항, 계약서 -> 어떤 것을 구현할 목적
+
 type PositionType = {
   x: number;
   y: number;
