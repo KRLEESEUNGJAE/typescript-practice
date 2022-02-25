@@ -7,11 +7,7 @@
   --border-color: #3f3f3f;
   --shadow-color: #202020;
   --document-bg-color: #68686850;
-  --component-bg-gradient: radial-gradient(
-    circle,
-    #646464e6 0%,
-    #363636e6 100%
-  );
+  --component-bg-gradient: radial-gradient(circle, #646464e6 0%, #363636e6 100%);
   --smokywhite: #dddbd8;
   --black: #000000;
   --translucent-black: #00000099;
@@ -36,7 +32,7 @@ label {
 }
 
 body {
-  background: url('../assets/cool-background\ \(2\).png') center/cover no-repeat;
+  background: url('../assets/background.png') center/cover no-repeat;
   font-family: Roboto, Oxygen, sans-serif;
   display: flex;
   justify-content: center;
