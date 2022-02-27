@@ -9,12 +9,12 @@ class App {
         this.page.attachTo(appRoot);
         const image = new ImageComponent('Image Title', 'https://picsum.photos/600/300');
         image.attachTo(appRoot, 'beforeend');
+        const video = new VideoComponent('Video Title', 'https://youtu.be/NaFd8ucHLuo');
+        video.attachTo(appRoot, 'beforeend');
         const note = new NoteComponent('Note Title', 'Note Body');
         note.attachTo(appRoot, 'beforeend');
         const todo = new TodoComponent('Todo Title', 'Todo list');
         todo.attachTo(appRoot, 'beforeend');
-        const video = new VideoComponent('Video Title', 'https://youtu.be/NaFd8ucHLuo');
-        video.attachTo(appRoot, 'beforeend');
     }
 }
 new App(document.querySelector('.document'));
