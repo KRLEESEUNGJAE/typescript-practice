@@ -3,7 +3,7 @@ export class VideoComponent extends BaseComponent<HTMLElement> {
   constructor(title: string, url: string) {
     super(`<section class="video">
             <div class="video__player"><iframe class="video__iframe"></iframe></div>
-            <h3 class="video__title"></h3>
+            <h3 page-item__title class="video__title"></h3>
           </section>`);
 
     const iframe = this.element.querySelector('.video__iframe')! as HTMLIFrameElement;
@@ -23,7 +23,8 @@ export class VideoComponent extends BaseComponent<HTMLElement> {
   // https://www.youtube.com/embed/-ObdvMkCKws //? -> 이 형식으로 만들어야 함!
   // 정규표현식 Regex를 이용하여 추출
   private convertToEmbeddedURL(url: string): string {
-    const regExp = /^(?:https?:\/\/)?(?:www\.)?(?:(?:youtube.com\/(?:(?:watch\?v=)|(?:embed\/))([a-zA-Z0-9-]{11}))|(?:youtu.be\/([a-zA-Z0-9-]{11})))/;
+    const regExp =
+      /^(?:https?:\/\/)?(?:www\.)?(?:(?:youtube.com\/(?:(?:watch\?v=)|(?:embed\/))([a-zA-Z0-9-]{11}))|(?:youtu.be\/([a-zA-Z0-9-]{11})))/;
     const match = url.match(regExp);
     console.log(match);
 
